@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+:root{
+    --orange:#f9ba60;
+    --pink:#e9768f;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    background: white;
+    font-size: 18px;
+    
+}
+
+section{
+    padding: 3rem 7%;
+  }
+
+  .heading{
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 6rem;
+  }
+
+  .heading span{
+    color: var(--orange);
+    text-transform: uppercase;
+  }
+  
+  .btn{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--orange);
+    color: var(--orange);
+    background: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background: var(--orange);
+    color: var(--white);
+  }
+  
+
+  /* header */
+
+.header{
+    position:relative;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    width: 50px;
+  }
+  
+  .header .logo i{
+    color: var(--orange);
+  }
+
+  .header .logo img{
+    width: 150px;
+    height: 100px;
+  }
+  
+  .header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+  }
+  
+  .header .navbar a:hover,
+  .header .icons div:hover{
+    color: var(--orange);
+  }
+  
+  .header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  #menu-btn{
+    display: none;
+  }
+  
+  .header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--white);
+    text-align: center;
+  }
+  
+  .header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+  
+  .header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+  
+  .header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    
+  }
+  
+  .header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+  }
+  
+  .header .login-form p a{
+    color: var(--orange);
+    text-decoration: underline;
+  }
+  
+  /* header ends */
+  
+/* home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+  }
+  
+  .home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  
+  .home .content h3{
+    font-size: 6rem;
+    color: var(--black);
+  }
+  
+  .home .content h3 span{
+    color: var(--orange);
+  }
+  
+  .home .content p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+  }
+  
+  .home .image{
+    flex: 1 1 40rem;
+  }
+  
+  .home .image img{
+    width: 100%;
+    padding: 4rem;
+  }
+
+  .home .addUser-form.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+  .home .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    
+  }
+
+  .header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--white);
+    text-align: center;
+  }
+
+  .home .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1684324473 .shape-fill {
+    fill: var(--pink);
+  }
+  
+  /* end */
+
+  /* dashboard */
+  .dashboard{
+    min-height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items:top;
+    position: relative;
+  }
+
+  /* contact */
+
+.contact .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+  }
+  
+  .contact .icons-container .icons{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+    text-align: center;
+    outline: .1rem solid rgba(0,0,0,.1);
+    outline-offset: -1rem;
+  }
+  
+  .contact .icons-container .icons i{
+    font-size: 2.5rem;
+    height: 6rem;
+    width: 6rem;
+    color: var(--white);
+    line-height: 6rem;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+  
+  .contact .icons-container .icons h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--black);
+  }
+  
+  .contact .icons-container .icons p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+  }
+  
+  .contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+  
+  .contact .row .image{
+    flex: 1 1 20rem;
+  }
+  
+  .contact .row .image img{
+    width: 100%;
+  }
+  
+  .contact .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    border: 0.1rem solid rgba(0,0,0,.4);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+  }
+  
+  .contact .row form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--black);
+  }
+  
+  .contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact .row form .inputBox input{
+    width: 49%;
+  }
+  
+  .contact .row form .inputBox input,
+  .contact .row form textarea{
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0,0,0,.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    margin: .7rem 0;
+  }
+  
+  .contact .row form .inputBox input:focus,
+  .contact .row form textarea:focus{
+    border: 0.1rem solid var(--orange);
+  }
+  
+  .contact .row form textarea{
+    height: 15rem;
+    width: 100%;
+    resize: none;
+  }
+  
+  /* end */
+  
+.addBtn{
+  padding: 10px 60px;
+  background: blue;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius:30px ;
+}
+
+
+/* styling add user form */
+#addUserForm{
+  height: 600px; overflow: auto;
+  width: 90%;
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  
+}
+
+#addUserForm input{
+width: 60%;
+padding:5px;
+
+}
+
+th, tr, td {
+  border: 2px solid;
+  border-radius: 3px;
+  width: 60%;
+  padding: 3px;
+}
+
+#userTableBody{
+  width: 60%; overflow: auto;
+}
